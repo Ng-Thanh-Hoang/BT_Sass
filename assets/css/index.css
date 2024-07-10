@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url(/assets/img/yellow_top_wave_01.png);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: top;
+  background-position: 50% top;
+}
+.header .container .menu a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  margin: 0 20px;
+}
+.header .container .menu a:hover {
+  color: #b61984;
+}
+.header .container .menu .big-icon {
+  margin-left: 1.25rem;
+}
+.header .container .menu .big-icon .number_phone {
+  background-color: #b61984;
+  border: 1px solid #b61984;
+  color: white;
+  transform: scale(1, 1);
+  transition: all 0.5s;
+}
+.header .container .menu .big-icon .number_phone:hover {
+  background-color: white;
+  border: 1px solid #b61984;
+  color: #b61984;
+  transition: transform 0.5s;
+}
+.header .container .menu .big-icon .number_phone i {
+  transform: rotate(260deg);
+}
+.header .container .menu .big-icon .icon {
+  margin-left: 0.75rem;
+}
+.header .container .menu .big-icon .icon i {
+  padding: 0.25rem;
+}
+.header .container .menu .big-icon .icon i:hover {
+  color: #b61984;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

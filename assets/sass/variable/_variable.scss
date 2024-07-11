@@ -29,7 +29,9 @@ $bg-white: $white;
 $bg-warning-100: $warning-100;
 $bg-warning-200: $warning-200;
 $bg-warning-300: $warning-300;
+$bg-purple:#dcd1f0;
 //sizing:(font size)
+$text-title:14px;
 $text-base: 16px;
 $text-xl: 18px;
 $text-2xl: 20px;
@@ -41,6 +43,7 @@ $text-7xl: 70px;
 
 $fw-light: 300;
 $fw-normal: 400;
+$fw-mid:500;
 $fw-semi: 600;
 $fw-bold: 700;
 
@@ -70,8 +73,8 @@ $p-9: 2.25rem;
 @mixin mText($fz: $text-base, $fw: $fw-normal, $c: $text-dark) {
     //default params (giá trị mặc định)
     font-size: $fz;
-    color: $c;
     font-weight: $fw;
+    color: $c;
 }
 
 @mixin mButton($fz, $fw, $c, $bg, $p, $bd, $br, $bg-hover, $sc-hover) {

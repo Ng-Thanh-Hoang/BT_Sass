@@ -12,16 +12,16 @@
 
 .header {
   background: url(/assets/img/yellow_top_wave_01.png);
-  height: 500px;
   background-repeat: no-repeat;
   background-size: top;
   background-position: 50% top;
+  height: 400px;
 }
 .header .container .menu a {
   text-decoration: none;
   font-size: 16px;
-  color: #000;
   font-weight: 500;
+  color: #000;
   margin: 0 20px;
 }
 .header .container .menu a:hover {
@@ -55,4 +55,87 @@
 .header .container .menu .big-icon .icon i:hover {
   color: #b61984;
   cursor: pointer;
+}
+
+.carousel {
+  height: 300px;
+}
+.carousel .container {
+  position: absolute;
+  z-index: 3;
+  bottom: 80px;
+  left: 309px;
+}
+.carousel .container .text h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #b61984;
+}
+.carousel .container .text h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #000;
+}
+.carousel .container .img img {
+  width: 90%;
+}
+.carousel .carousel-img {
+  background: url(/assets/img/Violet_top_left_wave.png);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top right;
+}
+
+.intro {
+  background-color: #dcd1f0;
+  position: relative;
+  z-index: 1;
+}
+.intro .container .row .col-md-3 .card {
+  margin-top: 30px;
+  transition: 0.5s;
+  border: none;
+  overflow: hidden;
+  z-index: 2;
+}
+.intro .container .row .col-md-3 .card:hover {
+  box-shadow: -1px 30px 83px 8px rgba(128, 128, 128, 0.5);
+  transition: all 0.5s;
+}
+.intro .container .row .col-md-3 .card img {
+  transition: 1s;
+}
+.intro .container .row .col-md-3 .card img:hover {
+  transform: scale(1.03);
+  transition: all 0.5s;
+}
+.intro .container .row .col-md-3 .card .card-footer {
+  border: 0;
+}
+.intro .container .row .col-md-3 .card .card-footer h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b61984;
+}
+.intro .container .row .col-md-3 .card .card-footer h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+.intro .container .row .col-md-3 .card .card-footer p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.intro .intro-img {
+  background: url(/assets/img/Wave_White_bottom_right_shape_01.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  bottom: -40px;
+  z-index: 0;
 }/*# sourceMappingURL=index.css.map */

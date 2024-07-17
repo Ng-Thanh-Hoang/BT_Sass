@@ -35,12 +35,18 @@
                     color: $white;
                     transform: scale(1, 1);
                     transition: all 0.5s;
+                    // background-color:$pink;
+                    /* Màu nền mặc định */
+                    // color: $white;
+                    /* Màu chữ */
+                    //transition: background-color 0.5s ease;
 
                     &:hover {
                         background-color: $white;
                         border: 1px solid $pink;
                         color: $pink;
                         transition: transform 0.5s;
+                        //background-color: linear-gradient(circle at 50% 50%, $pink 100%, $white 0%);   
                     }
 
                     i {
@@ -82,12 +88,15 @@
             h4 {
                 @include mText($text-2xl, 500, $pink);
             }
+
             h1 {
                 @include mText($text-6xl, $fw-bold, $dark);
             }
         }
 
         .img {
+            animation-delay: 0.5s;
+
             img {
                 width: 90%;
             }
@@ -108,15 +117,33 @@
     background-color: $bg-purple;
     position: relative;
     z-index: 1;
+
     .container {
         .row {
             .col-md-3 {
+                .move1 {
+                    animation-delay: 0.5s;
+                }
+
+                .move2 {
+                    animation-delay: 0.7s;
+                }
+
+                .move3 {
+                    animation-delay: 0.8s;
+                }
+
+                .move4 {
+                    animation-delay: 1.2s;
+                }
+
                 .card {
                     margin-top: 30px;
                     transition: 0.5s;
                     border: none;
                     overflow: hidden;
                     z-index: 2;
+
                     &:hover {
                         box-shadow: -1px 30px 83px 8px rgba(128, 128, 128, 0.5);
                         ;
@@ -161,6 +188,237 @@
         height: 500px;
         position: absolute;
         bottom: -40px;
-        z-index:0;
+        z-index: 0;
+    }
+}
+
+//form-input
+.form-input {
+    background: url(/assets/img/accent_bottom_wave_01.png);
+    background-size: 100%;
+    background-position: center right;
+    background-repeat: no-repeat;
+
+    .container {
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+
+        .form-left {
+            width: 55%;
+
+            img {
+                width: 69%;
+            }
+        }
+
+        .form-right {
+            width: 35%;
+
+            form {
+                animation-delay: 0.5s;
+                box-shadow: 4px 33px 118px 5px rgba(128,128,128,0.46);
+                border-radius: 10px;
+                background-color: $bg-white;
+                .form-container {
+                    margin: 10px 10px;
+
+                    h1 {
+                        @include mText($text-4xl, $fw-bold, $dark);
+                    }
+
+                    .group {
+                        position: relative;
+
+                        .fa {
+                            position: absolute;
+                            top: 13px;
+                            left: 15px;
+                            color: #aa017e;
+                        }
+
+                        input {
+                            width: 170px;
+                            padding: 10px 0px 10px 40px;
+                            border: 1px solid gray;
+                            border-radius: 30px;
+                            display: block;
+                        }
+                    }
+
+                    .group1 {
+                        position: relative;
+
+                        .fa {
+                            position: absolute;
+                            top: 13px;
+                            left: 15px;
+                            color: #aa017e;
+                        }
+
+                        select {
+                            width: 350px;
+                            padding: 10px 0px 10px 40px;
+                            border: 1px solid gray;
+                            border-radius: 30px;
+                            display: block;
+                        }
+
+                        .text {
+                            width: 350px;
+                            padding: 8px 0px 40px 40px;
+                            border: 1px solid gray;
+                            border-radius: 30px;
+                            display: block;
+                        }
+                    }
+                }
+
+                .submit {
+                    @include mButton($text-title, 500, $text-white, #aa017e, 15px 50px, 1px solid #aa017e, 30px, $bg-white, #aa017e);
+                    border: 1px solid #aa017e;
+                    margin-left: 40px;
+                    margin-bottom: 10px;
+                    &:hover {
+                        border: 1px solid #aa017e;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//footer
+.footer {
+    background: url(/assets/img/footer_background.jpg);
+    background-repeat: no-repeat;
+    background-size: 123%;
+    background-position: bottom center;
+    height: 600px;
+
+    .container {
+        padding-top: 100px;
+
+        .big {
+            .item {
+                h1 {
+                    @include mText($text-3xl, $fw-bold, $white);
+                }
+
+                .item-link {
+                    margin-top: 20px;
+
+                    .map {
+                        margin: 10px 0;
+
+                        .fa {}
+
+                        p {
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .footer-icon {
+                        margin-top: 20px;
+
+                        i {
+                            margin: 0 5px;
+
+                            &:hover {
+                                color: $dark;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .item2 {
+                margin-left: 100px;
+
+                h1 {
+                    @include mText($text-3xl, $fw-bold, $white);
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    display: block;
+                    position: relative;
+                    padding: 10px 0;
+                    font-size: $text-title;
+
+                    &::after {
+                        content: '';
+                        border-bottom: 1px solid #990171;
+                        width: 70px;
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
+                    }
+
+                    &:hover {
+                        color: gray;
+                    }
+                }
+
+                .item-link {
+                    margin-top: 20px;
+
+                    .map {
+                        margin: 10px 0;
+
+                        .fa {}
+
+                        p {
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .footer-icon {
+                        margin-top: 20px;
+
+                        i {
+                            margin: 0 5px;
+
+                            &:hover {
+                                color: $dark;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .letter {
+            h1 {
+                @include mText($text-3xl, $fw-bold, $white);
+            }
+
+            .text-center {
+                padding: 10px 25px;
+                border: 1px solid transparent;
+                border-radius: 30px;
+                margin-top: 40px;
+                display: block;
+            }
+
+            .submit {
+                padding: 10px 85px;
+                border: 1px solid $white;
+                border-radius: 30px;
+                margin-top: 40px;
+                display: block;
+                background-color: $white;
+                transition: all 0.5s;
+                @include mText($text-title, 500, $dark);
+
+                &:hover {
+                    background-color: #aa017e;
+                    transition: all 0.5s;
+                }
+            }
+        }
     }
 }

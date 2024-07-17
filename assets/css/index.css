@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -36,6 +37,8 @@
   color: white;
   transform: scale(1, 1);
   transition: all 0.5s;
+  /* Màu nền mặc định */
+  /* Màu chữ */
 }
 .header .container .menu .big-icon .number_phone:hover {
   background-color: white;
@@ -76,6 +79,9 @@
   font-weight: 700;
   color: #000;
 }
+.carousel .container .img {
+  animation-delay: 0.5s;
+}
 .carousel .container .img img {
   width: 90%;
 }
@@ -91,6 +97,18 @@
   background-color: #dcd1f0;
   position: relative;
   z-index: 1;
+}
+.intro .container .row .col-md-3 .move1 {
+  animation-delay: 0.5s;
+}
+.intro .container .row .col-md-3 .move2 {
+  animation-delay: 0.7s;
+}
+.intro .container .row .col-md-3 .move3 {
+  animation-delay: 0.8s;
+}
+.intro .container .row .col-md-3 .move4 {
+  animation-delay: 1.2s;
 }
 .intro .container .row .col-md-3 .card {
   margin-top: 30px;
@@ -138,4 +156,208 @@
   position: absolute;
   bottom: -40px;
   z-index: 0;
+}
+
+.form-input {
+  background: url(/assets/img/accent_bottom_wave_01.png);
+  background-size: 100%;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+.form-input .container {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+.form-input .container .form-left {
+  width: 55%;
+}
+.form-input .container .form-left img {
+  width: 69%;
+}
+.form-input .container .form-right {
+  width: 35%;
+}
+.form-input .container .form-right form {
+  animation-delay: 0.5s;
+  box-shadow: 4px 33px 118px 5px rgba(128, 128, 128, 0.46);
+  border-radius: 10px;
+  background-color: white;
+}
+.form-input .container .form-right form .form-container {
+  margin: 10px 10px;
+}
+.form-input .container .form-right form .form-container h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+}
+.form-input .container .form-right form .form-container .group {
+  position: relative;
+}
+.form-input .container .form-right form .form-container .group .fa {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  color: #aa017e;
+}
+.form-input .container .form-right form .form-container .group input {
+  width: 170px;
+  padding: 10px 0px 10px 40px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  display: block;
+}
+.form-input .container .form-right form .form-container .group1 {
+  position: relative;
+}
+.form-input .container .form-right form .form-container .group1 .fa {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  color: #aa017e;
+}
+.form-input .container .form-right form .form-container .group1 select {
+  width: 350px;
+  padding: 10px 0px 10px 40px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  display: block;
+}
+.form-input .container .form-right form .form-container .group1 .text {
+  width: 350px;
+  padding: 8px 0px 40px 40px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  display: block;
+}
+.form-input .container .form-right form .submit {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background: #aa017e;
+  padding: 15px 50px;
+  border: 1px solid #aa017e;
+  border-radius: 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: 1px solid #aa017e;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+.form-input .container .form-right form .submit:hover {
+  background: white;
+  color: #aa017e;
+}
+.form-input .container .form-right form .submit:hover {
+  border: 1px solid #aa017e;
+}
+
+.footer {
+  background: url(/assets/img/footer_background.jpg);
+  background-repeat: no-repeat;
+  background-size: 123%;
+  background-position: bottom center;
+  height: 600px;
+}
+.footer .container {
+  padding-top: 100px;
+}
+.footer .container .big .item h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+.footer .container .big .item .item-link {
+  margin-top: 20px;
+}
+.footer .container .big .item .item-link .map {
+  margin: 10px 0;
+}
+.footer .container .big .item .item-link .map p {
+  margin-left: 10px;
+}
+.footer .container .big .item .item-link .footer-icon {
+  margin-top: 20px;
+}
+.footer .container .big .item .item-link .footer-icon i {
+  margin: 0 5px;
+}
+.footer .container .big .item .item-link .footer-icon i:hover {
+  color: #000;
+  cursor: pointer;
+}
+.footer .container .big .item2 {
+  margin-left: 100px;
+}
+.footer .container .big .item2 h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+.footer .container .big .item2 a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  position: relative;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.footer .container .big .item2 a::after {
+  content: "";
+  border-bottom: 1px solid #990171;
+  width: 70px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.footer .container .big .item2 a:hover {
+  color: gray;
+}
+.footer .container .big .item2 .item-link {
+  margin-top: 20px;
+}
+.footer .container .big .item2 .item-link .map {
+  margin: 10px 0;
+}
+.footer .container .big .item2 .item-link .map p {
+  margin-left: 10px;
+}
+.footer .container .big .item2 .item-link .footer-icon {
+  margin-top: 20px;
+}
+.footer .container .big .item2 .item-link .footer-icon i {
+  margin: 0 5px;
+}
+.footer .container .big .item2 .item-link .footer-icon i:hover {
+  color: #000;
+  cursor: pointer;
+}
+.footer .container .letter h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+.footer .container .letter .text-center {
+  padding: 10px 25px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  margin-top: 40px;
+  display: block;
+}
+.footer .container .letter .submit {
+  padding: 10px 85px;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin-top: 40px;
+  display: block;
+  background-color: white;
+  transition: all 0.5s;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+.footer .container .letter .submit:hover {
+  background-color: #aa017e;
+  transition: all 0.5s;
 }/*# sourceMappingURL=index.css.map */
